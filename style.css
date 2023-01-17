@@ -1,0 +1,25 @@
+#taskName {
+    outline: 0
+}
+#single_task {
+    position: relative;
+}
+#single_task input {
+    outline: 0;
+    box-shadow: 0;
+}
+#single_task::after {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    content: "\f111";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    transform: translateY(-50%);
+    color: rgb(255, 255, 255);
+}
+
+
+#single_task.task-completed::after {
+    content: "\f00c";
+}
